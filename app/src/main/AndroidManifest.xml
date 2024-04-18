@@ -15,15 +15,7 @@
         <activity
             android:name=".OertionD"
             android:exported="false" />
-        <activity
-            android:name=".CircleAc"
-            android:exported="false" />
-        <activity
-            android:name=".shapeActitvty"
-            android:exported="false" />
-        <activity
-            android:name=".DivisionActivity"
-            android:exported="false" />
+
         <activity
             android:name=".MultiplicationActivity"
             android:exported="false" />
