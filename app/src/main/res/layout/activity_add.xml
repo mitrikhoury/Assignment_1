@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B00D43C"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="508dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Addition Operation"
+                android:textSize="35sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textviewstart"
+                android:layout_width="match_parent"
+                android:layout_height="838dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:maxWidth="400dp"
+                android:scrollbars="vertical"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <ListView
+                android:id="@+id/listVeiwExamples"
+                android:layout_width="507dp"
+                android:layout_height="499dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/backAdd"
+                android:layout_width="149dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Back" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
