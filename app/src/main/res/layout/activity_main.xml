@@ -43,13 +43,12 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:text="Exploring the Four Operations and Shapes ! 📚"
         android:textSize="23sp"
         android:textStyle="bold" />
@@ -69,9 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:soundEffectsEnabled="true"
         android:text="Addition"
-        android:textAlignment="center"
         android:textSize="20sp" />
 
     <Button
@@ -80,9 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:soundEffectsEnabled="true"
         android:text="Subtraction"
-        android:textAlignment="center"
         android:textSize="20sp" />
 
     <Button
@@ -91,9 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:soundEffectsEnabled="true"
         android:text="Multiplication"
-        android:textAlignment="center"
         android:textSize="20sp" />
 
     <Button

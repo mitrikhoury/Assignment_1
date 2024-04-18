@@ -16,8 +16,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class AddActivity extends AppCompatActivity {
- private  TextView textviewstart;
- private ListView listVeiwExamples;
+ private  TextView textviewstart1;
+ private ListView listVeiwExamples12;
  private Button backAdd;
 
     @Override
@@ -37,13 +37,13 @@ public class AddActivity extends AppCompatActivity {
     }
 
     public void setValueInList(){
-        listVeiwExamples=findViewById(R.id.listVeiwExamples);
+        listVeiwExamples12=findViewById(R.id.listVeiwExamples12);
         String[]  Examples = {"2 + 2 = 4","5 + 1 = 6","7 + 14 = 21","99 + 100 = 199","6 + 0 = 6","2 + 9 = 11","33 + 44 = 77","19 + 11 = 30","55 + 5 = 60" , "0 + 0 = 0"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(AddActivity.this,android.R.layout.simple_list_item_1,Examples);
-        listVeiwExamples.setAdapter(adapter);
+        listVeiwExamples12.setAdapter(adapter);
     }
     public void setvalue(){
-        textviewstart = findViewById(R.id.textviewstart);
+        textviewstart1 = findViewById(R.id.textviewstart1);
         String x ="Addition is one of the fundamental arithmetic operations, and it involves combining two or more numbers to find their total or sum. Here's an explanation of the addition operation:\n" +
                 "\n" +
                 "Definition:\n" +
@@ -60,7 +60,7 @@ public class AddActivity extends AppCompatActivity {
                 "Associative Property: The grouping of numbers being added does not change the result. For example, (2 + 3) + 4 is the same as 2 + (3 + 4), and both equal 9.\n" +"\n"+
                 "Identity Element: The number 0 serves as the identity element for addition. Adding 0 to any number leaves the number unchanged. For example, 5 + 0 equals 5."
                 +"\n"+"Examples : ";
-        textviewstart.setMovementMethod(new ScrollingMovementMethod());
-        textviewstart.setText(x);
+        textviewstart1.setMovementMethod(new ScrollingMovementMethod());
+        textviewstart1.setText(x);
     }
 }

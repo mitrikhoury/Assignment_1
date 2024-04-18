@@ -2,7 +2,6 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#5B00D43C"
@@ -29,7 +28,7 @@
                 android:textStyle="bold|italic" />
 
             <TextView
-                android:id="@+id/textviewstart"
+                android:id="@+id/textviewstart1"
                 android:layout_width="match_parent"
                 android:layout_height="838dp"
                 android:layout_marginLeft="10dp"
@@ -42,7 +41,7 @@
                 android:verticalScrollbarPosition="defaultPosition" />
 
             <ListView
-                android:id="@+id/listVeiwExamples"
+                android:id="@+id/listVeiwExamples12"
                 android:layout_width="507dp"
                 android:layout_height="499dp"
                 android:layout_marginLeft="10dp"

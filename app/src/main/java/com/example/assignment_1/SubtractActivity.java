@@ -1,5 +1,6 @@
 package com.example.assignment_1;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,11 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SubtractActivity extends AppCompatActivity {
 
-    private TextView textViewSub;
+    private TextView subText;
 
-    private ListView SubListVeiw;
+    private ListView subListVeiw;
 
-    private Button SubBack;
+    private Button SubBack1;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +26,8 @@ public class SubtractActivity extends AppCompatActivity {
         setValueText();
         setValueForList();
 
-        SubBack = findViewById(R.id.DivBack);
-        SubBack.setOnClickListener(new View.OnClickListener() {
+        SubBack1 = findViewById(R.id.SubBack1);
+        SubBack1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SubtractActivity.this,MainActivity.class);
@@ -38,14 +40,14 @@ public class SubtractActivity extends AppCompatActivity {
 
     public void setValueForList(){
 
-        SubListVeiw=findViewById(R.id.DivListVeiw);
+        subListVeiw=findViewById(R.id.subListVeiw);
         String[]  Examples = {"5 - 2 = 3","55 - 1 = 54","45 - 14 = 31","99 - 100 = -1","6 - 0 = 6","78 - 10 = 68","33 - 4 = 29","19 - 11 = 8","15 - 5 = 10" , "1 - 1 = 0"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(SubtractActivity.this,android.R.layout.simple_list_item_1,Examples);
-        SubListVeiw.setAdapter(adapter);
+        subListVeiw.setAdapter(adapter);
     }
 
     public void setValueText(){
-        textViewSub = findViewById(R.id.DivText);
+        subText = findViewById(R.id.subText);
         String y ="Subtraction is a fundamental arithmetic operation that involves finding the difference between two numbers. Here's a concise explanation:\n" +
                 "\n" +
                 "Definition:\n" +
@@ -62,7 +64,7 @@ public class SubtractActivity extends AppCompatActivity {
                 "Subtraction is not associative: Changing the grouping of numbers changes the result. For example, (10 - 4) - 2 is not the same as 10 - (4 - 2).\n" +"\n"+
                 "Identity Element: Subtracting 0 from any number leaves the number unchanged. For example, 10 - 0 equals 10."+"\n"+"Examples :";
 
-        textViewSub.setText(y);
+        subText.setText(y);
 
     }
 

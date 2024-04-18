@@ -12,12 +12,10 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tra_image"
+        android:layout_height="393dp"
+        android:layout_marginBottom="16dp"
         android:scaleType="centerInside"
-        android:layout_marginBottom="16dp"/>
-
-
+        android:src="@drawable/tra_image" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,8 +28,9 @@
         android:id="@+id/edit_widthR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Enter width"
         android:inputType="numberDecimal"
-        android:hint="Enter width"/>
+        android:minHeight="48dp" />
 
 
     <TextView
@@ -45,8 +44,9 @@
         android:id="@+id/edit_heightR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Enter height"
         android:inputType="numberDecimal"
-        android:hint="Enter height"/>
+        android:minHeight="48dp" />
 
 
     <Button

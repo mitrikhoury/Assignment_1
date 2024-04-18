@@ -18,20 +18,14 @@ import androidx.core.view.WindowInsetsCompat;
 public class OertionD extends AppCompatActivity {
 
 
-    private TextView DivText;
+    private TextView DivText1;
     private ListView divListVeiw;
     private Button btBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_oertion_d);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
         setvalue();
         setValueInList();
@@ -47,14 +41,14 @@ public class OertionD extends AppCompatActivity {
     }
 
     public void setValueInList(){
-        divListVeiw=findViewById(R.id.listVeiwExamples);
+        divListVeiw=findViewById(R.id.divListVeiw);
         String[]  Examples = {"12 ÷ 3 = 4 ","20 ÷ 5 = 4","15 ÷ 3 = 5","36 ÷ 6 = 6 ","25 ÷ 5 = 5","48 ÷ 8 = 6","30 ÷ 3 = 10 ","42 ÷ 7 = 6","18 ÷ 2 = 9" , "50 ÷ 10 = 5"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(OertionD.this,android.R.layout.simple_list_item_1,Examples);
         divListVeiw.setAdapter(adapter);
     }
 
     public void setvalue(){
-        DivText = findViewById(R.id.textviewstart);
+        DivText1 = findViewById(R.id.DivText1);
         String x ="Here's an explanation of the division operation:\n" +
                 "\n" +
                 "Definition:\n" +
@@ -71,7 +65,7 @@ public class OertionD extends AppCompatActivity {
                 "Commutative Property: Unlike addition and multiplication, division is not commutative. Changing the order of numbers changes the result. For example, 6 ÷ 2 is not the same as 2 ÷ 6.\n" +"\n"+
                 "Associative Property: Similar to addition and multiplication, division is also associative. The grouping of numbers being divided does not change the result. For example, (8 ÷ 4) ÷ 2 is the same as 8 ÷ (4 ÷ 2), and both equal 2.\n" +"\n"+
                 "Identity Element: The number 1 serves as the identity element for division. Dividing any number by 1 leaves the number unchanged. For example, 5 ÷ 1 equals 5." + "\n"+ " Example : ";
-        DivText.setText(x);
+        DivText1.setText(x);
     }
 
 }

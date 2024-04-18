@@ -35,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btd.setOnClickListener( v -> {
-           Intent intenet = new Intent(MainActivity.this , OertionD.class);
-           startActivity(intenet);
+           Intent intnet = new Intent(MainActivity.this , OertionD.class);
+           startActivity(intnet);
                 }
                 );
 
         ShapeBt.setOnClickListener(v -> {
-            Intent intenet = new Intent(MainActivity.this , tra.class);
-            startActivity(intenet);
+            Intent intnet = new Intent(MainActivity.this , tra.class);
+            startActivity(intnet);
         });
 
 
