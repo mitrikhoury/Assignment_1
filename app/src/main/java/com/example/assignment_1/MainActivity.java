@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btSub;
     private Button btMul;
 
-   // private Button ShapeBt;
-
+    private Button ShapeBt;
+   // mitri
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 );
 
-
+        ShapeBt.setOnClickListener(v -> {
+            Intent intenet = new Intent(MainActivity.this , tra.class);
+            startActivity(intenet);
+        });
 
 
     }
@@ -49,6 +52,6 @@ public class MainActivity extends AppCompatActivity {
         btSub=findViewById(R.id.btSub);
         btMul=findViewById(R.id.btMul);
         btd=findViewById(R.id.btd);
-       // ShapeBt=findViewById(R.id.ShapeBt);
+        ShapeBt=findViewById(R.id.ShapeBt);
     }
 }
